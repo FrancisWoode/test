@@ -1,0 +1,221 @@
+
+ *{
+  font-family: sans-serif;
+  user-select:none;
+}
+.date1{
+  text-align: right;
+  color: rgb(201, 193, 193);
+}
+.fstline{
+  text-align: center;
+color: rgb(6, 20, 180);
+}
+
+.serchbar{
+  text-align: right;
+}
+
+.header{
+      color: white;
+}
+.home{
+  text-align: Left;
+  
+}
+.fstHome{
+  background-color: black;
+  padding: 20px;
+}
+footer {
+  background-color: rgb(36, 36, 61);
+padding: 10px;
+text-align: center;
+color: white;
+}
+.Webg{
+  text-align:left;
+ 
+}
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+/**Horizontal lines**/
+hr.new4{
+  border-top: 1px solid red;
+}
+hr.new0{
+  border-top: 1px solid black;
+}
+
+.search{
+  text-align:right;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 40%;
+  border: 3px solid #011214;
+  border-right: none;
+  height: 10px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #000302;
+}
+
+.searchTerm:focus{
+  color: #0c606b;
+}
+
+input[type=text] {
+  
+  width: 150px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: black;
+  color: #f2f2f2;
+  background-image: url('searchicon.png');
+background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 50%;
+  
+}
+/* Navgation Bar */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body{
+    font-family:'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    text-decoration: none;
+}
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 200px;
+    height: 75%;
+    background: #042331;
+    transition: all .5s ease;
+}
+.sidebar header{
+font-size: 22px;
+color:white;
+text-align: center;
+line-height: 60px;
+background: #063146;
+user-select: none;
+}
+.sidebar ul a{
+    display: block;
+   
+    height: 100%;
+    width: 100%;
+    line-height: 41px;
+    font-size:16px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top:1px solid rgba(255,255,255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+
+label #btn, lable #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+}
+
+lable #cancel{
+    z-index:1111;
+    left: -195px;
+    top:17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+
+}
+#check:checked ~ .sidebar{
+    left:0;
+}
+
+#check:checked ~ label #btn{
+    left:   250px;
+    opacity: 0;
+    pointer-events:none;
+
+}
+
+#check:checked ~lable #cancel{
+    left:195px;
+}
+/*blogs*/
+.Captin_smart{
+  padding: 20px;
+}
+.pic{
+  text-align: center;
+  padding: 10px;
+}
+.Galamsayvid{
+  text-align: center;
+ padding: 10px;
+}
+.Blog2{
+  padding: 20px;
+}

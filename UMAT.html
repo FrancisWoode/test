@@ -1,0 +1,179 @@
+<!Doctype html>
+<html>
+<head>
+<title>UMaT</title>
+<meta name="viewport"content="width=device-width,initial-scale=1"></meta>
+<style>
+    body{background-color:rgb(205, 213, 230);  color: white;}
+    footer {
+    background-color: rgb(9, 26, 80);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+*{
+        font-family: sans-serif;
+        user-select:none;
+    }
+.Pie{
+    text-align: center;
+}
+.button-box{
+    width: 400px;
+    margin: 6% auto;
+    position: relative;
+    border-radius: 25px;
+    padding: 5px;
+    height: 650px;
+    background-color: #1523e285;
+    opacity: 75px;
+    position: relative;
+    
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+body{
+  background-color: rgb(226, 226, 226);
+}
+form{
+  cursor: pointer;
+}
+.submit{
+  text-align: center;
+  cursor: pointer;
+}
+    </style>
+</head>
+
+<body>
+  <div class="button-box">
+
+<div class="Pie">
+  <div class ="log">
+  <img src="Images/UMAR.png" height="60" width="70"> 
+</div>
+<h2>UNIVERSITY OF MINES AND TECHNOLOGY</h2>
+</div>
+
+<form name="myform">
+  <input type=""size="46" style="background-color: #d2edf7; font-weight: bolder;" name="ans"disabled>
+<br>
+<input type=""size="46" style="background-color: #d2edf7; font-weight: bolder;" name="Interpretation"disabled> <br><br>
+
+SCORE
+<table class="center">
+<tr>
+<td>1:<input type="text" name="fst"placeholder="Enter SCORE OR ZERO(0)"size="13" style="text-align: justify;" value="0"></td><td>
+  Credit:<input type="text" name="f"placeholder="Enter CREDIT OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td>
+</tr>
+<tr>
+<td>2:<input type="text" name="snd"placeholder="Enter SCORE OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td><td>
+  Credit:<input type="text" name="s"placeholder="Enter CREDIT OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td>
+</tr>
+<tr>
+<td>3:<input type="text" name="third"placeholder="Enter SCORE OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td><td>
+  Credit:<input type="text" name="t"placeholder="Enter CREDIT OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td>
+</tr>
+<tr>
+<td>4:<input type="text" name="forth"placeholder="Enter SCORE OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td><td>
+  Credit:<input type="text" name="ft"placeholder="Enter CREDIT OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td>
+</tr>
+<tr>
+<td>5:<input type="text" name="fift"placeholder="Enter SCORE OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td><td>
+  Credit:<input type="text" name="fif"placeholder="Enter CREDIT OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td>
+</tr>
+<tr>
+<td>6:<input type="text" name="sixth"placeholder="Enter SCORE OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td><td>
+  Credit:<input type="text" name="sis"placeholder="Enter CREDIT OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td>
+</tr>
+<tr>
+<td>7:<input type="text" name="seventh"placeholder="Enter SCORE OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td><td>
+  Credit:<input type="text" name="sev"placeholder="Enter CREDIT OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td>
+</tr>
+<tr>
+<td>8:<input type="text" name="eight"placeholder="Enter SCORE OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td><td>
+  Credit:<input type="text" name="e"placeholder="Enter CREDIT OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td>
+</tr>
+<tr>
+<td>9:<input type="text" name="nine"placeholder="Enter SCORE OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td><td>
+  Credit:<input type="text" name="n"placeholder="Enter CREDIT OR ZERO(0)"size="13"style="text-align: justify;" value="0"></td>
+</tr>
+</table>
+
+<h3>FILL The Form Below With Your Previous CWA And Previous Total Credit </h3>
+Old CWA:<input type="text" name="Old_CWA"size="10" placeholder="CWA"style="text-align: justify;" value="0">
+Total Credit:<input type="text" name="Old_Credit" size="10" placeholder="TOTAL CREDIT"style="text-align: justify;" value="0"><br><br> 
+<div class="submit">
+<input type="button"  onclick="Answer()" value="submit"style="width:30%; padding: 10px;  background-color:blue; border-color:skyblue;color: white; border-radius: 7px;"/>
+</div>
+</form>
+</div>
+<script type="text/javascript">
+function Answer(){
+
+fst=parseFloat(myform.fst.value);
+snd=parseFloat(myform.snd.value);
+third=parseFloat(myform.third.value);
+forth=parseFloat(myform.forth.value);
+fift=parseFloat(myform.fift.value);
+sixth=parseFloat(myform.sixth.value);
+seventh=parseFloat(myform.seventh.value);
+eight=parseFloat(myform.eight.value);
+nine=parseFloat(myform.nine.value);
+Old_CWA=parseFloat(myform.Old_CWA.value);
+
+
+f=parseFloat(myform.f.value);
+s=parseFloat(myform.s.value);
+t=parseFloat(myform.t.value);
+ft=parseFloat(myform.ft.value);
+fif=parseFloat(myform.fif.value);
+sis=parseFloat(myform.sis.value);
+sev=parseFloat(myform.sev.value);
+e=parseFloat(myform.e.value);
+n=parseFloat(myform.n.value);
+Old_Credit=parseFloat(myform.Old_Credit.value);
+var x;
+var y;
+var Tcredit;
+//X IS total COURSE x CREDIT HOUR ie Weighted Mark
+//Y is total credit Hours
+x=((fst*f)+(snd*s)+(third*t)+(forth*ft)+(fift*fif)+(sixth*sis)+(seventh*sev)+(eight*e)+(nine*n));
+y=(f+s+t+ft+fif+sis+sev+e+n);
+Tcredit=f+s+t+ft+fif+sis+sev+e+n;
+//ROUND THE RESULT BELLOW TO 2DP
+var first_result;
+first_result=Math.round((x/y)*100)/100;
+var second_result;
+  second_result= Math.round((((Old_CWA*Old_Credit)+x)/(Old_Credit+Tcredit))*100)/100;
+
+if (Old_CWA===0){
+    result=first_result
+}else {
+  result=second_result;
+}
+
+var Interpretation;
+if(result>=80){Interpretation='FIRST CLASS'}
+else if(result>=60 && result<70){Interpretation='SECOND CLASS LOWER'}
+else if(result<60){Interpretation='PASS'}
+else if(result>=70 && result<80){Interpretation='SECOND CLASS UPPER'}else{Interpretation='Fill the empty space with 0'}
+var ans=result; 
+myform.ans.value=ans;
+myform.Interpretation.value=Interpretation;
+}
+</script>
+<br>
+<!--
+<footer>
+  
+    <p>All Universities in Ghana</p>
+    <p7>@ 2020</p7>
+  </footer>
+-->
+</body>
+
+
+</html>

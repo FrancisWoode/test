@@ -1,0 +1,472 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboad</title>
+
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 14px;
+        text-decoration:none ;
+        list-style: none;
+        user-select:none;
+    }
+ body{
+     display: flex ;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+
+     background: linear-gradient(-30deg,#33ccff,#81d5ff,#ffccff,#81d5ff);
+ }
+.container{
+
+    width: 90%;
+    height: 120vh;
+    background: rgba(225, 225,225, .4) ;
+}
+.container .navbar{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 4px 12px;
+}
+.container .navbar .logo{
+    display: flex ;
+    align-items: center;
+}
+.container .navbar .logo .logoname{
+font-size: 18px;
+text-transform: uppercase;
+margin-left: 2cm;
+
+}
+.container .navbar .logo img{
+    animation: rotate 8s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(-360deg);
+    }
+}
+.container .navbar .searchbox{
+    position: relative;
+}
+.container .navbar .searchbox input{
+    padding: 8px 120px 8px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    transition: -3s;
+
+}
+.container .navbar .searchbox input:focus{
+    padding: 8px 250px 8px 20px;
+}
+.container .navbar .searchbox .fa{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.container .navbar .navitems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .navbar .navitems .lang select{
+    padding: 6px 30px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    position: relative;
+    right: 4cm;
+
+}
+.container .navbar .navitem .icons{
+position: relative;
+right: 1cm;
+}
+.container .navbar .navitem .icons ul li{
+position: relative;
+display: inline-block;
+font-size: 16px;
+margin: 0 12px;
+color: #33cc33;
+}
+.container .navbar .navitem .icons ul li .fa{
+    padding: 5px;
+    color: #fff;
+    background: #000;
+    border-radius: 50px;
+    transition: 3s;
+}
+.container .navbar .navitem .icons ul li .fa:hover
+{
+    transform: scale(1.2) rotate(360deg);
+    color: #33cc33;
+    background: transparent;
+}
+.container .navbar .navitem .account{
+position: relative;
+
+}
+.container-body{
+    display: grid;
+    grid-template-columns: 18% auto;
+}
+.container-body .sidebar{
+    margin: 1px 1px 1px 1px;
+    background: rgba(116, 150, 127, 0.6);
+    border-radius: 14px;
+    padding: 1px;
+
+}
+.container-body .sidebar  ul li{
+    padding: 10px 10px;
+    margin: 10px 0;
+}
+.container-body .sidebar  ul li a{
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.container-body .sidebar  ul li:hover{
+    background: #ff0f43;
+    color: #fff;
+    border-radius: 9px;
+}
+
+.container-body .sidebar ul .dashboard{
+   background: #5240a5;
+   color: #fff;
+   border-radius: 8px;
+   padding: 10px ; 
+  
+}
+.container-body .sidebar ul .dashboard a {
+    color: #fff;
+
+}
+.container-body .main-body .tittle{
+    padding: 1    5px;
+    margin: 20px;
+    margin-bottom: 0;
+}
+.container-body .main-body .tittle .greeting{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 16px;
+}
+.container-body .main-body .tittle h2 .cc {
+font-weight:normal;
+
+}
+.container-body .main-body .cards .row-1{
+    display: grid;
+    grid-template-columns: 30% 40% auto;
+    grid-gap:20px;
+}
+.container-body .main-body .cards .row-2{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-gap:20px;
+}
+.container-body .main-body .cards .row .col{
+    background: rgba(122, 133, 125, 0.6);
+    border-radius: 15px;
+}
+.container-body .main-body .cards .row .col .cardtittle{
+    font-size: 16px;
+    padding: 20px;
+    text-transform: capitalize;
+}
+.Login-tins{
+    position: relative;
+    
+}
+.Login-tins h2{
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.Login-tins span{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    color: #17a517;
+}
+.Login-tins img{
+    position: absolute;
+    top: 2em;
+    align-self: center;
+    
+}
+
+.Calcus-tins img{
+    position: absolute;
+    align-self: center;
+
+}
+
+.Calcus-tins img{
+    position: absolute;
+    
+}
+.Calendar-tins
+{
+ width: 100%;
+ height: 100%;
+ position: relative;
+ border-radius: 18px;
+ background: #33ccff;
+ color: #fff;   
+}
+.Calendar-tins .cardnumber
+{
+    font-size: 18px;
+    padding: 10px 20px;
+    padding-right: 0;
+    background: rgba(225, 225,225, .6);
+    color: #000;
+    font-weight: normal;
+}
+.Calendar-tins .cardholder{
+    font-size: 10px;
+    padding: 20px;
+    font-weight: normal;
+}
+.col .t-i, .p-i, .u-i, .i-s{
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px 5px 20px 20px;
+}
+.col .status{
+    font-size: 18px;
+    padding: 6px 20px;
+    border-radius: 6px;
+    color: #fff;
+    position: relative;
+    bottom: 3px;
+}
+.News-tins .status{
+    font-weight: 700;
+    color: #339933;
+    font-size: 16px;
+    padding-left: 5px;  
+
+}
+.Calcus-tins .status{
+    background:  #ff0066;
+}
+.Pasco-tins .status{
+    background: #ff0066;
+}
+.Convertor-tins .status{
+    background: #ffcc00;
+}
+.container a:hover
+{
+    background: #ff0f43;
+    color: #fff;
+    border-radius: 9px;
+    
+}
+/*Search Bar*/
+.serchbar{
+  text-align: right;
+  padding: 2% 5% 2%;
+  color: #ffcc00;
+}
+h3 a{
+   font-size: 16px;
+  text-align: center;
+  font-family: sans-serif;
+  font-style: Bold;
+  color: #3d0dc2;
+}
+.Schol-Hub{
+    background: rgba(122, 133, 125, 0.6);
+    border-radius: 15px;
+    width: 237px;
+    height: 65px;
+    text-align: center;
+    padding: 30px;
+}
+
+
+
+    </style>
+</head>
+<body>
+       
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">  
+                <img src="Images/WebGLogo.png" width="100px" height="70" alt="">
+                <!--<span class="logoname">welcome</span>
+                -->
+            </div>
+
+            <div class="serchbar">
+                <form>
+                  <input type="text" size="11" name="search" placeholder="&#128269;Search..">
+                </form>
+              </div>
+           
+        <div class="navitem"> 
+            <div class="lang">
+        <select name=""id="">
+            <option value="">More</option>
+        <option value="">Help</option>
+        <option value="">About</option>
+        <option value="">Contact</option>
+        
+        </select>
+        </div>
+        <!---
+        <div class="icons">
+        
+            <img height="25" width="25" src="Images/Email.svg" alt="">
+        </div>  
+     
+        <div class="account">
+            <img src="" alt="">
+            <span class="name">Admin:</span>
+            <span class="username">@King Laga</span>
+        
+        </div> 
+    -->
+        </div>
+    </div>
+
+    <div class="container-body">
+        <div class="sidebar">
+            <ul>
+                <li class="dashboard">
+                    <i class="fa fa-info-circle"></i>
+                    <a href="New Login.html">Sign up / Login</a>
+                </li>
+                <li class="dashboard">
+                    <i class="fa fa-dahscbe"></i>
+                    <a href="Blogsite.html">Campuse Eye</a>
+                </li>
+                
+                <li class="dashboard">
+                    <i class="fa fa-envelope-o"></i>
+                    <a href="UMaT Pastco.html">Umat Pasco</a>
+                </li>
+                <li class="dashboard">
+                    <i class="fa fa-credit-card-alt"></i>
+                    <a href="New Front Page.html">CWA or GPA Calculator</a>
+                </li>
+                <li class="dashboard">
+                    <i class="fa fa-history"></i>
+                    <a href="convertor.html">CWA and GPA Convertor</a>
+                </li>
+                <li class="dashboard">
+                    <i class="fa fa-money"></i>
+                    <a href="MUSIC Mall.html">Music Mall</a>
+                </li>
+                <li class="dashboard">
+                    <i class="fa fa-money"></i>
+                    <a href="Hub.html">Links Hub</a>
+                </li>
+               
+            </ul>
+        </div>
+ 
+        <div class="main-body">
+            <div class="cards">
+                <div class="row row-1">
+                    <div class="col">
+                        <div class="Login-tins">
+                            <img src="Images/Edu.png" width="80" height="60" alt="">
+                            <br><br><br><br>
+                            <h3 class="cardtittle"> <a href="New Login.html">Login/Signup</a></h3>
+                            <h2 class="balance"> 54321</h2>
+                            <span class="balancestatus">15%</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="News-tins">
+                            <img src="Images/BNews.png" width="100%" height="100%" alt="">
+                            <h3 class="cardtittle"> <a href="Blogsite.html">Campuse Eye</a></h3>
+                            <span class="t-i">News 24/7</span>
+                            <span class="status">10K+    </span>
+                            <img src=""alt="">
+                        </div>
+                    </div>
+                  
+               </div>
+                   <br>
+                <div class="row row-2">
+                    <div class="col">
+                        <div class="Pasco-tins">
+                            <img src="Images/Books.png" width="70" height="60" alt="">
+                            <h3 class="cardtittle"><a href="UMaT Pastco.html">UMaT Pasco</a></h3>
+                            <span class="u-i">529</span>
+                            <span class="status">+75%
+                                <i class="fa fa-line-chart"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Calcus-tins">
+                            <img width="100"height="70" src="Images/Calcus.png" alt=""><br><br><br>
+                            <h3 class="cardtittle"><a href="New Front Page.html">CWA / GPA Calculator</a></h3>
+                            <span class="p-i">accuracy</span>
+                            <span class="status">100%
+                                <i class="fa fa-line-chart"></i>
+                               
+                            </span>
+                           
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Calendar-tins">
+                            <h3 class="cardtittle">Year</h3>
+                            <h3 class="cardnumber">2022</h3>
+                            <h3 class="cardholder">@WebG</h3>
+                        </div>
+                   </div>
+                    
+                    <br>
+                    <div class="col">
+                        <div class="Convertor-tins">
+                            <h3 class="cardtittle"><a href="convertor.html">CWA & GPA Convertor</a></h3>
+                            <span class="i-s">accuracy</span>
+                            <span class="status">100%
+                                <i class="fa fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Music-tins">
+                            <h3 class="cardtittle"> <a href="MUSIC Mall.html">Music Site</a></h3>
+                            <img width="140" height="80" src="Images/Musical (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col">
+                    <div class="Schol-Hub">
+                        <h3 class="cardtittle"> <a href="Hub.html">Scholarship & Internship Hub</a></h3>
+                        <img width="140" height="80" src="Images/Scholership1 (2).png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+</html>

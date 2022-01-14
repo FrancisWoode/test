@@ -1,0 +1,492 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Music Mall</title>
+    <meta name="viewport"content="width=device-width,initial-scale=1"></meta>
+   <style>
+       *{
+        font-family: sans-serif;
+        user-select:none;
+    }
+     .header{
+    
+  
+    color: white;
+  
+}
+.home{
+text-align: Left;
+
+}
+.fstHome{
+background-color: black;
+padding: 30px;
+
+}
+footer {
+background-color: rgb(36, 36, 61);
+padding: 10px;
+text-align: center;
+color: white;
+}
+
+body{
+background: #f2f2f2;
+font-family: 'Open Sans', sans-serif;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.search {
+width: 100%;
+position: relative;
+display: flex;
+}
+
+.searchTerm {
+    
+width: 100%;
+border: 3px solid #00B4CC;
+border-right: none;
+padding: 5px;
+height: 20px;
+border-radius: 5px 0 0 5px;
+outline: none;
+color: #9DBFAF;
+}
+
+.searchTerm:focus{
+color: #00B4CC;
+}
+hr.new1{
+border-top: 1px solid red;
+}
+hr.new2{
+border-top: 1px solid red;
+}
+hr.new3{
+border-top: 1px solid red;
+}
+hr.new4{
+border-top: 1px solid red;
+}
+hr.new0{
+border-top: 1px solid red;
+}
+
+.search{
+text-align:right;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+background: #f2f2f2;
+font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+width: 100%;
+position: relative;
+display: flex;
+}
+
+.searchTerm {
+width: 40%;
+border: 3px solid #011214;
+border-right: none;
+padding: 5px;
+height: 10px;
+border-radius: 5px 0 0 5px;
+outline: none;
+color: #000302;
+}
+
+.searchTerm:focus{
+color: #0c606b;
+}
+
+input[type=text] {
+
+width: 150px;
+height: 10px;
+box-sizing: border-box;
+border: 2px solid #ccc;
+border-radius: 4px;
+font-size: 16px;
+background-color: black;
+color: #f2f2f2;
+background-image: url('searchicon.png');
+background-position: 10px 10px; 
+background-repeat: no-repeat;
+padding: 12px 20px 12px 40px;
+-webkit-transition: width 0.4s ease-in-out;
+transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+width: 50%;
+
+}
+/**TODAY**/
+     /* root styling */
+     :root{
+    --light:#f8f9fa;
+    --secondary:#adb5bd;
+    --dark:#343a40;
+    --primary-color:#f15bb5;
+    --secondry-color:#2ec4b6;
+    --border:#e9ecef;
+}
+body{
+    padding:0;
+    margin:0;
+
+}
+a{
+    text-decoration: none;
+}
+*>*{
+    box-sizing: border-box;
+}
+
+/* gloal styling */
+.text-light{
+    color:var(--light);
+}
+.text-dark{
+    color: var(--dark);
+}
+.text-primary{
+    color: var(--primary-color);
+}
+.bg-light{
+    background-color: var(--light);
+}
+.container{
+    max-width:1200px;
+    padding: 0 15px;
+    margin:auto;
+    
+}
+
+/* section styling */
+/* Navgation Menu */
+.collapse1{
+position: relative;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 5px;
+text-align: left;
+}
+
+.nav-brand{
+    font-family: 'DM Sans',sana-serif;
+    font-weight: bold;
+    align-self: center;
+    font-size: 32px;  
+}
+.collapse{
+    align-self: center;
+    
+}
+.nav-link{
+    font-size: 18px;
+    margin: 12px;
+    color:rgb(160, 194, 196);
+    font-family: 'Poppins',sans-serif;
+}
+.nav-link:hover{
+    color: var(--primary-color);
+}
+/*.hero{
+    height: 100%;
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(Untitled-1.jpg);
+}*/
+.tile1{
+    text-align: center;
+}
+/* Navgation Bar */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body{
+    font-family:'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    text-decoration: none;
+}
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 170px;
+    height: 75%;
+    background: #0a0416;
+    transition: all .5s ease;
+}
+.sidebar header{
+font-size: 22px;
+color:white;
+text-align: center;
+line-height: 60px;
+background: #1b133f;
+user-select: none;
+}
+.sidebar ul a{
+    display: block;
+   
+    height: 100%;
+    width: 100%;
+    line-height: 41px;
+    font-size:16px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top:1px solid rgba(255,255,255, .1);
+    border-bottom: 1px solid rgb(26, 25, 25);
+    transition: .4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+
+label #btn, lable #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+}
+
+lable #cancel{
+    z-index:1111;
+    left: -195px;
+    top:17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+
+}
+#check:checked ~ .sidebar{
+    left:0;
+}
+
+#check:checked ~ label #btn{
+    left:   250px;
+    opacity: 0;
+    pointer-events:none;
+
+
+}
+
+#check:checked ~lable #cancel{
+    left:195px;
+}
+.serchbar{
+  text-align: right;
+}
+.title1{
+    text-align: center;
+}
+/**SITE**/
+.Intro{
+  color: #23259c;
+  padding: 5px;
+}
+.musicimags{
+    text-align: center;
+}
+.comment_box{
+    padding-top: 5%;
+}
+.h3{
+    padding: 10px 10px;
+}
+   </style>
+</head>
+
+<body>
+<div class="header">
+    <div class="home">
+      <div class="fstHome">
+ <!---Navbars-->
+        <div class="collapse1">
+          <div class="logo1">
+           
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i>&#x2630;</i>
+                 <!--- 
+                   
+                     <i class="fas fa-bars" id="btn"></i>
+                    <i class="fas fa-times" id="cancle"></i>
+                 -->
+            </label>
+        
+            <div class="sidebar">
+                <header>My App</header>
+                <ul>
+                    <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+                    <li><a href="Shortcuts.html"><i class="fas fa-link"></i>Shortcuts</a></li>
+                    <li><a href="MUCIS Mall.html"><i class="fas fa-music"></i>Home</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i>Trends</a></li>
+                    <li><a href="TheRest/Services.htm"><i class="fas fa-sliders-h"></i>Services</a></li>
+                    <li><a href="tel:+233271157276"><i class="fas fa-phone"></i>Contact</a></li>
+                    <li><a href="TheRest/About.htm"><i class="fas fa-question-circle"></i>About</a></li>
+                    <li><a href="TheRest/Help.htm"><i class="fas fa-hand-holding-heart"></i>Help</a></li>
+                    
+                    
+        
+                </ul>
+            </div>
+        
+            <!---Navbars-->
+        </div>
+            <ul class="navbar-nav">
+               <a href="MUCIS Mall.html"class="nav-link">Home </a>
+               <a href="#"class="nav-link">Trends</a>
+            </ul>
+            </div>
+             <!--Search Bar-->
+             <div class="serchbar">
+              <form>
+                <input type="text" name="search" placeholder="&#128269;Search..">
+              </form>
+            </div>
+              </div>
+    
+    <img src="Images/Music mall logo.jpg" height="100%" width="100%">
+  </div></div>
+
+<div src="middle">
+  <div class="Intro">
+<h2>Play And Download Your Music For Free.</h2>
+</div>
+
+<br>
+<hr class="new2">
+<br>
+<div class="musicimags">
+<img src="Images/Joeboy-Alcohol-Art.jpg" height="10%" width="50%">
+<audio controls>
+    <source src="Tracks/Joeboy-Alcohol.mp3"type="audio/mpeg">
+</audio><a href="Tracks/Joeboy-Alcohol.mp3"download><i class="fas fa-downlod"></i><img src="Images/Downlo.png" height="10%" width="12%"></a>
+</div>
+<h3>Alcohol by Joeboy [Full Audio]</h3>
+<br>
+
+<br>
+<hr class="new2">
+<br>
+
+<div class="musicimags">
+    <img src="Images/jailman_prod_by_itzcj_beatz-29536.jpg" height="10%" width="50%">
+    <audio controls>
+        <source src="Tracks/Shatta-Wale-–-Jail-Man-DownGh.com_.mp3"type="audio/mpeg">
+    </audio><a href="Tracks/Shatta-Wale-–-Jail-Man-DownGh.com_.mp3"download><i class="fas fa-downlod"></i><img src="Images/Downlo.png" height="10%" width="12%"></a>
+    </div>
+    <h3>Jail Man by Shatta Wale [Dancehall King]</h3>
+    <br>
+    <hr class="new3">
+    <br>
+<div class="musicimags">
+<img src="Images/NEWML.jpg" height="10%" width="50%">
+<audio controls>
+    <source src="Tracks/20. [BONUS] TON - Haters ft. Lil Kwaw[prod by Mike Neff & TONBeatz].mp3"type="audio/mpeg">
+</audio><a href="Tracks/20. [BONUS] TON - Haters ft. Lil Kwaw[prod by Mike Neff & TONBeatz].mp3"download><i class="fas fa-downlod"></i><img src="Images/Downlo.png" height="10%" width="12%"></a>
+</div>
+<h3>TON - Haters ft. Lil Kwaw [prod by Mike Neff & TONBeatz]</h3>
+<br>
+<hr class="new3">
+<br>
+<div class="musicimags">
+<img src="Images/Kwesi.jpg" height="10%" width="50%">
+<audio controls>
+    <source src="Tracks/Kwesi Arthur Light.mp3"type="audio/mpeg">
+</audio><a href="Tracks/Kwesi Arthur Light.mp3"download><i class="fas fa-downlod"></i><img src="Images/Downlo.png" height="10%" width="12%"></a>
+</div>
+<h3>Kwesi Arthur Light</h3>
+<br>
+<hr class="new0">
+<br>
+<div class="musicimags">
+<img src="Images/Awakeeee.jpg" height="50%" width="50%">
+<audio controls>
+    <source src="Tracks/Kweku Flick awake.mp3"type="audio/mpeg">
+</audio><a href="Tracks/Kweku Flick awake.mp3"download><i class="fas fa-downlod"></i><img src="Images/Downlo.png" height="10%" width="12%"></a>
+</div>
+<h3>Awake by Kweku Flick [Awake]</h3>
+<br>
+<hr class="new4">
+<br>
+<div class="musicimags">
+<img src="Images/Money.jpg" height=" 10%" width="50%">
+<audio controls>
+  <source src="Tracks/Kweku Flick Money.mp3"type="audio/mpeg">
+</audio><a href="Tracks/Kweku Flick Money.mp3"download><i class="fas fa-downlod"></i><img src="Images/Downlo.png" height="10%" width="12%"></a>
+</div>
+<h3>Money by Kweku Flick </h3>
+<br>
+<hr class="new1"><br>
+</div>
+
+
+
+
+
+
+<footer>
+    <p> Music Mall GH</p>
+    <p>© 2020</p>
+    <br>
+    <div class="logos">
+        <a href="whatsapp:contact=0271157276@s.whatsapp.com">
+      <img src="Images/WhatsApp.svg" height="7%" width="7%"/>
+    </a>&nbsp;&nbsp;&nbsp;
+       <a href="https://mobile.twitter.com">
+      <img src="Images/Twitter.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+      <a href=" tel:+233271157276">
+      <img src="Images/kall.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="https://instagram.com">
+      <img src="Images/instagram.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="https://youtu.be/dHbA7aLxorQ.com">
+      <img src="Images/You tube.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="https://xhibitwoode@gmail.com">
+      <img src="Images/Gmail.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+      <a href="https://telegram.org">
+      <img src="Images/Tele.svg" height="7%" width="7%">
+    </a>
+   
+    </div>
+    <div class="comment_box">
+        <form>
+            <fieldset>
+            <legend><h3>Comment</h3></legend>
+            <input type="text"name="Comment"placeholder="Comment Box" style="height: 60px; width: 180px;"/>
+             <input type="button" value="Submit" onclick="Ans()" style="width:20%; padding: 9px;background-color:blue; border-color:skyblue;color: white; border-radius: 7px;">
+            </fieldset>
+                </form>
+            </div> 
+</footer>
+
+
+</body>
+
+</html>

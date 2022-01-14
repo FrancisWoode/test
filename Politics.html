@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics</title>
+    <style>
+      /* root styling */
+:root{
+    --light:#f8f9fa;
+    --secondary:#adb5bd;
+    --dark:#bdbebe;
+    --primary-color:#f15bb5;
+    --secondry-color:#2ec4b6;
+    --border:#e9ecef;
+}
+body{
+    padding:0;
+    margin:0;
+
+}
+*{
+        font-family: sans-serif;
+        user-select:none;
+    }
+a{
+    text-decoration: none;
+}
+*>*{
+    box-sizing: border-box;
+}
+
+/* gloal styling */
+.text-light{
+    color:var(--light);
+}
+.text-dark{
+    color: var(--dark);
+}
+.text-primary{
+    color: var(--primary-color);
+}
+.bg-light{
+    background-color: rgba(23, 36, 54, 0.801);
+}
+.container{
+    max-width:1200px;
+    padding: 0 15px;
+    margin:auto;
+    
+}
+
+/* section styling */
+/* Navgation Menu */
+.collapse1{
+position: relative;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 5px;
+text-align: left;
+}
+
+.nav-brand{
+    font-family: 'DM Sans',sana-serif;
+    font-weight: bold;
+    align-self: center;
+    font-size: 32px;  
+}
+.collapse{
+    align-self: center;
+    
+}
+.nav-link{
+    font-size: 18px;
+    margin: 12px;
+    color:var(--dark);
+    font-family: 'Poppins',sans-serif;
+}
+.nav-link:hover{
+    color: var(--primary-color);
+}
+/*.hero{
+    height: 100%;
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(Untitled-1.jpg);
+}*/
+.tile1{
+    text-align: center;
+}
+/* Navgation Bar */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body{
+    font-family:'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    text-decoration: none;
+}
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    transition: all .5s ease;
+}
+.sidebar header{
+font-size: 22px;
+color:white;
+text-align: center;
+line-height: 60px;
+background: #063146;
+user-select: none;
+}
+.sidebar ul a{
+    display: block;
+   
+    height: 100%;
+    width: 100%;
+    line-height: 41px;
+    font-size:16px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top:1px solid rgba(255,255,255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+
+label #btn, lable #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+}
+
+lable #cancel{
+    z-index:1111;
+    left: -195px;
+    top:17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+
+}
+#check:checked ~ .sidebar{
+    left:0;
+}
+
+#check:checked ~ label #btn{
+    left:   250px;
+    opacity: 0;
+    pointer-events:none;
+
+
+}
+
+#check:checked ~lable #cancel{
+    left:195px;
+}
+.title1{
+    text-align: center;
+    color: #f8f9fa;
+    padding: 10px;
+}
+.hero{
+    padding: 10px;
+}
+.BigAnnouncementVid{
+    text-align: center;
+}
+.Nomin{
+    text-align: center;
+    padding: 10px;
+}
+hr.new0{
+  border-top: 1px solid black;
+}
+.date1{
+  text-align: right;
+  color: rgb(201, 193, 193);
+  padding: 10px;
+}
+.Nominations{
+    padding: 10px;
+}
+/**FOOTER**/
+footer {
+  background-color: rgb(36, 36, 61);
+padding: 10px;
+text-align: center;
+color: white;
+}
+.Blog2{
+    padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+<!--Header -->
+<header id="header" class="shadow bg-light">
+<nav class="container navbar">
+  <div class="navbar">
+<!--<a href="/index.html"class="nav-brand text-dark">
+Gridy
+</a>-->
+<!--collapse on toggle button click-->
+<div class="collapse1">
+  <div class="logo1">
+    <!---Navbars-->
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i>&#x2630;</i>
+         <!--- 
+           
+             <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancle"></i>
+         -->
+    </label>
+
+    <div class="sidebar">
+        <header>My App</header>
+        <ul>
+            <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+            <li><a href="Shortcuts.html"><i class="fas fa-link"></i>Shortcuts</a></li>
+            <li><a href="Politics.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fas fa-users"></i>Trends</a></li>
+            <li><a href="TheRest/Services.htm"><i class="fas fa-sliders-h"></i>Services</a></li>
+            <li><a href="tel:+233271157276"><i class="fas fa-phone"></i>Contact</a></li>
+            <li><a href="TheRest/About.htm"><i class="fas fa-question-circle"></i>About</a></li>
+            <li><a href="TheRest/Help.htm"><i class="fas fa-hand-holding-heart"></i>Help</a></li>
+            
+            
+
+        </ul>
+    </div>
+
+    <!---Navbars-->
+</div>
+    <ul class="navbar-nav">
+       <a href="#"class="nav-link">Trends</a>
+       <a href="Politics.html"class="nav-link">H&#127968;me</a>
+    </ul>
+    </div>
+    <div class="title1">
+    <h2>POLITICAL ARENA</h2>
+  </div>
+    <!--collapse on toggle button click-->
+
+</nav>
+<img src="Images/Politicslogo.jpg" height="100%" width="100%">
+</header>
+
+<!--Header -->
+<div class="hero">
+<!--Blogstart-->
+<div class="Nominations">
+<h2>Opening of Nomination Forms</h2>
+<p>
+    The Electoral Commission of the University of Mines and Technology(UMaT) has  
+    open the nomination forms to all student populance who will like to contest the 2021/2022
+    election. The nomination form will be available from 14th May,2021 to 28th May,2021. 
+</p>
+<div class="Nomin">
+<img src="BlogImages/Nomination.jpg" height="350" width="350">
+</div>
+<h3>CATEGORIES & AMOUNT</h3><br>
+<ul>PRESIDENT - GHC500</ul>
+<p>TREASURER - GHC450</p>
+<P>LOCAL NUGS PRESIDENT - GHC400</P>
+<P>LOCAL NUGS TREASURER - GHC350</P>
+<P>LOCAL NUGS SECRETARY - GHC350</P>
+<P>WOMEN'S COMMISSIONER - GHC300</P>
+<P>FACULTY REPS - GHC250</P>
+<br>
+    All applicant must pay the appropirate amount for the form to the  UMaT SRCIGF ACCOUNT-2090025151533
+</p>
+
+</div>
+<div class="date1">
+    <h5>6th May 2021.</h5>
+    </div> 
+  
+  <hr class="new0">
+  <div class="Blog2">
+<h2>The Big Announcement</h2>
+<p>
+    A 2021 SRC Presidential election aspirant named Harry Cobbina, the leader of team GrassRoot has official decleared his 
+    intention to contest the 2021/2022 UMaT SRC election.</p>
+    <p>below is the video of the Big Announcement (official declaration of intent) 
+</p>
+<div class="BigAnnouncementVid">
+<video controls weidth="140" height="150">
+    <source src="BlogImages/BigAnnouncement.mp4" type="video/mp4">
+    </video>
+</div>
+  
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<!--Footer-->
+<footer>
+    <p>Campus EYE</p>
+    <p>© 2020</p>
+    <p>Webgee</p>
+    <div class="logos">
+        <a href="whatsapp:contact=0271157276@s.whatsapp.com">
+      <img src="Images/WhatsApp.svg" height="7%" width="7%"/>
+    </a>&nbsp;&nbsp;&nbsp;
+       <a href="https://mobile.twitter.com">
+      <img src="Images/Twitter.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+      <a href=" tel:+233271157276">
+      <img src="Images/kall.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="https://instagram.com">
+      <img src="Images/instagram.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="https://youtu.be/dHbA7aLxorQ.com">
+      <img src="Images/You tube.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="https://xhibitwoode@gmail.com">
+      <img src="Images/Gmail.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+      <a href="https://telegram.org">
+      <img src="Images/Tele.svg" height="7%" width="7%">
+    </a>
+   
+    </div>
+  </footer>
+
+</body>
+</html>

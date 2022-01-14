@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+ <title>Shortcuts</title>  
+ <meta name="viewport"content="width=device-width,initial-scale=1"></meta>
+ <style>
+
+*{
+        font-family: sans-serif;
+        user-select:none;
+    }
+.Dropdown_button{
+    text-align: center;
+    padding: 20px;
+    
+}
+.form-box{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    margin: 6% auto;
+    background: rgb(219, 233, 248);
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 9px #a6a9b4b4;
+}
+.social-icons{
+    
+    text-align: center;
+}
+.social-icons img{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius:50%;
+}
+ul li:hover a{
+    padding-left: 50px;
+
+}
+h2{
+    color: blue;
+    text-align: center;
+    font-family: Arial, Helvetica, ;
+}
+    </style>
+
+</head>
+
+<body>
+
+    
+    <div class="hero">
+        <div class="form-box">
+<div class="Dropdown_button">
+    <div class="social-icons">
+        <img src="Images/facebooks.svg">
+        <img src="Images/Twitters.svg">
+        <img src="Images/instagrams.svg">
+        <img src="Images/WhatsApp.svg">
+    </div><br>
+    <select id="foo" style="background-color:rgb(6, 80, 109);width:62%; padding: 5px;background:linear-gradient(to left, #ff105f, #ffad06);
+    border-radius: 17px;font-family: Arial;font-size:16px;cursor: pointer;color: white;background-color:blue">
+        <option value="">Choose Shortcuts</option>
+        <option value="New Login.html">Login /Sign up</option>
+        <option value="Blogsite.html">Blog Site</option>
+        <option value="New Front Page.html">Academics</option>
+        <option value="convertor.html">Grade Convertor</option>
+        <option value="MAIN PAGE.html">Grade Calculator</option>
+        <option value="Interpreter.html">Grade Interpreter</option>
+        <option value="Entertainment.html">Entertainment</option>
+        <option value="MUSIC Mall.html">Music</option>
+        <option value="sport.html">Sport</option>
+        <option value="Politics.html">Politics</option>
+        <option value="Services.htm">Services</option>
+        <option value="Help.htm">Help</option>
+
+
+    </select>
+</div>
+<h2>Please choose your option from the option box above</h2>
+           
+<form>
+    <fieldset>
+    <legend><h3>Comment</h3></legend>
+    <input type="text"name="Comment"placeholder="Comment Box" style="height: 30px; width: 180px;"/>
+     <input type="button" value="Submit" onclick="Ans()" style="background-color:blue; border-color:skyblue;color: white; border-radius: 7px;">
+    </fieldset>
+        </form>
+    </div>
+    </div>
+    
+    <script>
+        document.getElementById("foo").onchange = function() {
+            if (this.selectedIndex!==0) {
+                window.location.href = this.value;
+            }        
+        };
+    </script>
+
+    
+
+</html>
+
+
+</body>

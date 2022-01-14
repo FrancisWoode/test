@@ -1,0 +1,401 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Scholarship and Internship Hub</title>
+    <meta name="viewport"content="width=device-width,initial-scale=1"></meta>
+   
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+
+*{
+  font-family: sans-serif;
+  user-select:none;
+}
+.date1{
+  text-align: right;
+  color: rgb(201, 193, 193);
+}
+.fstline{
+  text-align: center;
+color: rgb(6, 20, 180);
+}
+
+.serchbar{
+  text-align: right;
+}
+
+.header{
+      color: white;
+}
+.home{
+  text-align: Left;
+  
+}
+.fstHome{
+  background-color: black;
+  padding: 20px;
+}
+footer {
+  background-color: rgb(36, 36, 61);
+padding: 10px;
+text-align: center;
+color: white;
+}
+.Webg{
+  text-align:left;
+ 
+}
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+/**Horizontal lines**/
+hr.new4{
+  border-top: 1px solid red;
+}
+hr.new0{
+  border-top: 1px solid black;
+}
+
+.search{
+  text-align:right;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 40%;
+  border: 3px solid #011214;
+  border-right: none;
+  height: 10px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #000302;
+}
+
+.searchTerm:focus{
+  color: #0c606b;
+}
+
+input[type=text] {
+  
+  width: 150px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: black;
+  color: #f2f2f2;
+  background-image: url('searchicon.png');
+background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 50%;
+  
+}
+/* Navgation Bar */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body{
+    font-family:'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    text-decoration: none;
+}
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 200px;
+    height: 75%;
+    background: #042331;
+    transition: all .5s ease;
+}
+.sidebar header{
+font-size: 22px;
+color:white;
+text-align: center;
+line-height: 60px;
+background: #063146;
+user-select: none;
+}
+.sidebar ul a{
+    display: block;
+   
+    height: 100%;
+    width: 100%;
+    line-height: 41px;
+    font-size:16px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top:1px solid rgba(255,255,255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+
+label #btn, lable #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+}
+
+lable #cancel{
+    z-index:1111;
+    left: -195px;
+    top:17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+
+}
+#check:checked ~ .sidebar{
+    left:0;
+}
+
+#check:checked ~ label #btn{
+    left:   250px;
+    opacity: 0;
+    pointer-events:none;
+
+}
+
+#check:checked ~lable #cancel{
+    left:195px;
+}
+/*blogs*/
+.Captin_smart{
+  padding: 20px;
+}
+.pic{
+  text-align: center;
+  padding: 10px;
+}
+.Galamsayvid{
+  text-align: center;
+ padding: 10px;
+}
+.Blog2{
+  padding: 20px;
+}
+
+    </style>
+</head>
+
+<body>
+ <!--Head-->
+<div class="header">
+    <div class="home">
+      <div class="fstHome">
+         <!---Navbars-->
+         <input type="checkbox" id="check">
+         <label for="check">
+             <i>&#x2630;</i>
+              <!--- 
+                
+                  <i class="fas fa-bars" id="btn"></i>
+                 <i class="fas fa-times" id="cancle"></i>
+              -->
+         </label>
+         <div class="sidebar">
+             <header>Categories</header>
+             <ul>
+                 <li><a href="Dashbord.html"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+                 <li><a href="Shortcuts.html"><i class="fas fa-link"></i>Shortcuts</a></li>
+                 <li><a href="New Login.html"><i class="fas fa-keyboard"></i>Login/Sign Up</a></li>
+                 <li><a href="New Front Page.html"><i class="fas fa-graduation-cap"></i>Academics</a></li>
+                 <li><a href="UMaT Pastco.html"><i class="fas fa-users"></i>Past Questions</a></li>
+                 <li><a href="Politics.html"><i class="fas fa-books"></i>Politics</a></li>
+                 <li><a href="Entertainment.html"><i class="fas fa-music"></i>Entertainment</a></li>
+                 <li><a href="MUSIC Mall.html"><i class="fas fa-music"></i>Music Mall</a></li>
+                 <li><a href="TheRest/Services.htm"><i class="fas fa-sliders-h"></i>Services</a></li>
+                 <li><a href="tel:+233271157276"><i class="fas fa-phone"></i>Contact</a></li>
+                 <li><a href="TheRest/About.htm"><i class="fas fa-question-circle"></i>About</a></li>
+                 <li><a href="TheRest/Help.htm"><i class="fas fa-hand-holding-heart"></i>Help</a></li>
+                 
+                 
+     
+             </ul>
+         </div>
+
+         <!---Navbars-->
+<!--Search Bar-->
+                <div class="serchbar">
+                  <form>
+                    <input type="text" name="search" placeholder="&#128269;Search..">
+                  </form>
+                </div>
+              </div>
+    
+  </div></div>
+  <!--Campus EYE Pic-->
+  <img src="Images/Hub.png" height="100%" width="100%">
+  <!--Middle-->
+<div class="middle">
+
+<hr class="new0">
+<br>
+<div class="Captin_smart">
+<h2>1000 dollars Stipend from Google Generation Scholarship for University Students</h2> <div class="pic">
+  <img src="Images/Scholership1 (2).png" height="250px" width="300px">
+  </div> 
+<h3>Details :</h3>
+<h4>Host : Google Scholarship 2022</h4>
+<h4></h4>
+<p>Benefit: Students will receive $1000 USD. For more details about this post, click on this link now <a href="https://bit.ly/3nooIKR">Click now</a></p>
+
+ 
+    
+   
+</div>
+<div class="date1">
+  <h5>13th January 2022.</h5>
+  </div> 
+
+<hr class="new0">
+<!--Blog2-->
+<div class="Blog2">
+  <h2>New Free Opportunity For Students</h2>
+  <h2>FREE ONLINE INTERNSHIP IN KMPG AUSTRALIA 2022</h2>
+  <div class="pic">
+    <img src="Images/Sch1.png" height="250px" width="300px">
+    </div>
+<h3>Benefits;</h3>
+<h4>Free Internship Certificate after Completion.</h4> 
+<h4>All student in any country can apply</h4> 
+  <p>For getting Certificate and More details, click on this link now <a href="https://bit.ly/3nooIKR">Click now</a> Also this opportunity apply to any Level of study starting from L100 </p>
+ 
+  </div>
+  <div class="date1">
+    <h5>13th January 2022.</h5>
+    </div> 
+  
+  <hr class="new0">
+
+  <div class="Blog2">
+    <h2>Another Opportunity to do your Masters and Ph.D Degree</h2>
+    <h2>University of Pecs Fully Funded Scholarships in Europe 2022</h2><br>
+    <p>Scholarships for Bachelor's Master and Ph.D Degree. Status: Fully Funded</p>
+
+    <div class="pic">
+      <img src="Images/Sch2.png" height="280px" width="300px">
+      </div>
+  <h3>Benefits;</h3>
+  <h4>Monthly Stipend</h4> 
+  <h4>100% tuition fee</h4>
+  <h4>Free accomodation</h4>
+  <h4>Medical coverage</h4>
+    <p>For More details, click on this link now <a href="https://bit.ly/3nooIKR">Click now</a></p>
+   
+    </div>
+    <div class="date1">
+      <h5>10th January 2022.</h5>
+      </div> 
+    
+    <hr class="new0">
+  
+
+<!--
+<div class="srk">
+<video controls>
+  <source src="VID-20191029-WA0001.mp4"type="video/mp4">
+  </video>
+</div>
+<p>Up and coming rappers freestyle at on MTN Hit Maker 2019</p>
+
+</div>
+-->
+<div class="older1">
+
+
+</div>
+
+
+
+<br><br><br><br><br><br><br><br><br>
+<!--Footer-->
+<footer>
+    
+
+    <div class="logos">
+        <a href="whatsapp:contact=0271157276@s.whatsapp.com">
+      <img src="Images/WhatsApp.svg" height="7%" width="7%"/>
+    </a>&nbsp;&nbsp;&nbsp;
+       <a href="https://mobile.twitter.com">
+      <img src="Images/Twitter.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+      <a href=" tel:+233271157276">
+      <img src="Images/kall.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="https://instagram.com">
+      <img src="Images/instagram.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="https://youtu.be/dHbA7aLxorQ.com">
+      <img src="Images/You tube.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="https://xhibitwoode@gmail.com">
+      <img src="Images/Gmail.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+      <a href="https://telegram.org">
+      <img src="Images/Tele.svg" height="7%" width="7%">
+    </a>
+   
+    </div>
+  </footer>
+
+
+</body>
+
+
+
+</html>

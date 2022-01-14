@@ -1,0 +1,227 @@
+
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interpreter</title>
+
+<style>
+
+    body{background-color:rgb(5, 17, 56); color: whitesmoke;}
+    *{
+        font-family: sans-serif;
+        user-select:none;
+    } 
+
+.container{
+    height: 230px;
+    position: relative;
+    border:3px solid green;
+}
+
+.title{
+    text-align: center;
+    width: auto;
+    margin: auto;
+    height: 60px;
+    position: relative;
+    box-shadow: 0 0 20px 9px #3f73a01f;
+    background: linear-gradient(to right, #29497a, #18d340f1,#288acce7);
+    padding: 3px;
+}
+.title2{
+    text-align: center;
+    width: auto;
+    height: 60px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #3f73a01f;
+    background: linear-gradient(to right,#288acce7, #20e04a, #288acce7,#20e04a);
+    padding: 3px;
+    
+}
+body{background-color:rgba(230, 237, 255, 0.678); color: whitesmoke;}
+.button-box{
+    width: 370px;
+    margin: 6% auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #295cc985;
+    border-radius: 20px;
+    padding: 5px;
+    height: 595px;
+    background-color: rgb(9, 26, 80);
+}
+footer {
+  background-color: rgb(36, 36, 61);
+padding: 1px;
+text-align: center;
+color: white;
+}
+</style>
+</head>
+<div class="button-box">
+
+<body><br>
+    <div class="container">
+    <div class="center">
+        <div class="title">
+        <h1>Interprate Your CWA</h1>
+    </div>
+
+     <form action="#" name="myform" method="post" id="demoForm1" class="demoForm1">
+             
+<!--<form name="myform">-->
+    
+    <h3>Enter your CWA score in the box below and click on University to choose your school.</h3>
+    
+    &nbsp&nbsp&nbsp  <input type="text" name="cwa"placeholder="CWA" size="1">&nbsp&nbsp
+    <select id="CHOOS1" name="CHOOS1">
+        <option value="0 ">UNIVERSITY</option>
+        <option value="1">UMaT</option>
+        <option value="2">KNUST</option>
+      </select>
+      
+=<input type="" size="16"name="result" disabled style="background-color:rgb(119, 198, 223); border-color:skyblue;color: rgb(2, 2, 2)"><br>
+
+</form>
+    </div>
+</div>
+<script type="text/javascript">
+document.getElementById("CHOOS1").onchange = function Answer() {
+cwa=parseFloat(myform.cwa.value);
+var cwa;
+var result;
+//UMAT
+ if((cwa>=80) && (this.selectedIndex==1)){
+    result='FIRST CLASS'}
+else if((cwa>=70 && cwa<80)&& (this.selectedIndex==1)){
+    result='SECOND UPPER'}
+else if((cwa>=60 &&cwa<70)&& (this.selectedIndex==1)){
+    result='SECOND LOWER'}
+else if((cwa<60)&& (this.selectedIndex==1)){
+    result='PASS'}
+    //KNUST
+else if((cwa>=70) && (this.selectedIndex==2)){
+    result='FIRST CLASS'}
+else if((cwa>=60 && cwa<70)&& (this.selectedIndex==2)){
+    result='SECOND UPPER'}
+else if((cwa>=50 &&cwa<60)&& (this.selectedIndex==2)){
+    result='SECOND LOWER'}
+else if((cwa<50)&& (this.selectedIndex==2)){
+    result='PASS'}
+    
+
+else{resul="NaN"}
+myform.result.value=result;
+}
+
+</script>
+<br><br><br><br>
+
+<div class="container">
+    <div class="center">
+        <div class="title2">
+        <h1>Interprate Your GPA</h1>
+    </div>
+    <h3>Enter your GPA score in the box below and click on University to choose your school.</h3>
+ <form action="#" name="myfor" method="post" id="demoForm" class="demoForm">
+    &nbsp&nbsp&nbsp <input type="text" name="gpa"placeholder="GPA"size="1">
+   &nbsp&nbsp
+          <select id="CHOOS" name="CHOOS">
+              <option value="0 ">UNIVERSITY</option>
+              <option value="1">UCC</option>
+              <option value="2">UEW</option>
+              <option value="3">UDS</option>
+              <option value="4">UPS</option>
+              <option value="5">UHAS</option>
+              <option value="6">UENR</option>
+              <option value="7">TTU</option>
+              <option value="8">RMU</option>
+          </select>
+    
+=<input type="" size="16"name="resul"disabled style="background-color:rgb(119, 198, 223); border-color:skyblue;color: rgb(2, 2, 2)"><br>
+
+</form>
+    </div>
+</div>
+
+<script type="text/javascript">
+document.getElementById("CHOOS").onchange = function Ans() {
+    gpa=parseFloat(myfor.gpa.value);
+var gpa;
+var resul;
+            if ((gpa>3.6 && gpa<=4.0) && (this.selectedIndex==1)  ){
+                resul="First Class"
+            }  
+           else if ((gpa>=3.0 && gpa<=3.5) && (this.selectedIndex==1)  ){
+                resul="Second Upper"
+            }  
+           else if ((gpa>=2.5 && gpa<=2.9) && (this.selectedIndex==1)  ){
+                resul="Second Lower"
+            }  
+            else if ((gpa>=2.0 && gpa<=2.4) && (this.selectedIndex==1)){
+                resul="Third Class"
+            }  
+            else if ((gpa>=1.0 && gpa<=1.9) && (this.selectedIndex==1)  ){
+                resul="Pass"
+            }  
+            else if ((gpa>4) && (this.selectedIndex==1)  ){
+                resul="Invalid Input"
+            }  
+            //UEW below
+
+           else if ((gpa>=3.5 && gpa<=4.0) && (this.selectedIndex==2)  ){
+                resul="First Class"
+            }  
+           else if ((gpa>=3.0 && gpa<=3.49) && (this.selectedIndex==2)  ){
+                resul="Second Upper"
+            }  
+           else if ((gpa>=2.5 && gpa<=2.9) && (this.selectedIndex==2)  ){
+                resul="Second Lower"
+            }  
+            else if ((gpa>=2.0 && gpa<=2.49) && (this.selectedIndex==2)  ){
+                resul="Third Class"
+            }  
+            else if ((gpa>=1.0 && gpa<=1.99) && (this.selectedIndex==2)  ){
+                resul="Pass"
+            }  
+            else if ((gpa>4) && (this.selectedIndex==2)  ){
+                resul="Invalid Input"
+            }  
+
+            //UDS below
+            else if ((gpa>=3.5 && gpa<=4.0) && (this.selectedIndex==3)  ){
+                resul="First Class"
+            }  
+           else if ((gpa>=3.0 && gpa<=3.49) && (this.selectedIndex==3)  ){
+                resul="Second Upper"
+            }  
+           else if ((gpa>=2.5 && gpa<=2.9) && (this.selectedIndex==3)  ){
+                resul="Second Lower"
+            }  
+            else if ((gpa>=2.0 && gpa<=2.49) && (this.selectedIndex==3)  ){
+                resul="Third Class"
+            }  
+            else if ((gpa>=1.0 && gpa<=1.99) && (this.selectedIndex==3)  ){
+                resul="Pass"
+            }  
+            else if ((gpa>4) && (this.selectedIndex==3)  ){
+                resul="Invalid Input"
+            }  
+
+            else{resul="NaN"}
+
+            myfor.resul.value=resul;      
+        };
+
+
+</script>
+</div>
+<footer>
+    <p>All Universities in Ghana</p>
+    <p>@ 2020</p>
+  </footer>
+</body>
+</html>
